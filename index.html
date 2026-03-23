@@ -31,7 +31,6 @@
     min-height: 100vh;
   }
 
-  /* Noise texture overlay */
   body::before {
     content: '';
     position: fixed;
@@ -49,14 +48,13 @@
     position: relative;
   }
 
-  /* HEADER */
   .header {
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto;
     gap: 32px;
     align-items: start;
-    margin-bottom: 48px;
-    padding-bottom: 48px;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
     border-bottom: 1px solid var(--border);
     position: relative;
   }
@@ -112,9 +110,7 @@
     margin-bottom: 8px;
   }
 
-  .name span {
-    color: var(--green);
-  }
+  .name span { color: var(--green); }
 
   .title {
     font-size: 16px;
@@ -168,7 +164,6 @@
     white-space: nowrap;
   }
 
-  .meta-tag + .meta-tag { margin-left: 0; }
   .meta-col { display: flex; flex-direction: column; gap: 6px; }
 
   .meta-dot {
@@ -179,7 +174,6 @@
     flex-shrink: 0;
   }
 
-  /* ABOUT */
   .about-block {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -212,10 +206,7 @@
     font-weight: 600;
   }
 
-  /* SECTION */
-  .section {
-    margin-bottom: 40px;
-  }
+  .section { margin-bottom: 40px; }
 
   .section-header {
     display: flex;
@@ -239,7 +230,6 @@
     background: var(--border);
   }
 
-  /* MATCH BLOCK */
   .match-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -288,7 +278,6 @@
     line-height: 1.6;
   }
 
-  /* SKILLS */
   .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -329,7 +318,6 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
 
-  /* EXPERIENCE */
   .exp-item {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -340,13 +328,8 @@
     transition: border-color 0.2s;
   }
 
-  .exp-item:hover {
-    border-color: rgba(255,255,255,0.12);
-  }
-
-  .exp-item.featured {
-    border-color: rgba(0,255,135,0.2);
-  }
+  .exp-item:hover { border-color: rgba(255,255,255,0.12); }
+  .exp-item.featured { border-color: rgba(0,255,135,0.2); }
 
   .exp-item.featured::before {
     content: 'Последнее место';
@@ -386,10 +369,7 @@
     font-weight: 500;
   }
 
-  .exp-period {
-    text-align: right;
-    flex-shrink: 0;
-  }
+  .exp-period { text-align: right; flex-shrink: 0; }
 
   .exp-dates {
     font-size: 12px;
@@ -433,7 +413,6 @@
     top: 3px;
   }
 
-  /* EDUCATION */
   .edu-block {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -452,10 +431,7 @@
     margin-bottom: 4px;
   }
 
-  .edu-spec {
-    font-size: 12px;
-    color: var(--muted);
-  }
+  .edu-spec { font-size: 12px; color: var(--muted); }
 
   .edu-year {
     font-family: 'Unbounded', sans-serif;
@@ -465,7 +441,6 @@
     flex-shrink: 0;
   }
 
-  /* FOOTER */
   .resume-footer {
     margin-top: 48px;
     padding-top: 24px;
@@ -473,7 +448,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: gap;
   }
 
   .footer-brand {
@@ -492,12 +466,8 @@
     color: var(--muted);
   }
 
-  .footer-target strong {
-    color: var(--green);
-    font-weight: 600;
-  }
+  .footer-target strong { color: var(--green); font-weight: 600; }
 
-  /* PLAYEROK LOGO STYLE */
   .pk-logo {
     font-family: 'Unbounded', sans-serif;
     font-size: 11px;
@@ -525,7 +495,6 @@
 <body>
 <div class="page">
 
-  <!-- HEADER -->
   <div class="header">
     <div>
       <div class="header-badge">Открыт к работе</div>
@@ -538,7 +507,7 @@
         </a>
         <a href="mailto:alexilinw@gmail.com" class="contact-item">
           <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
-          @alexilinw
+          alexilinw@gmail.com
         </a>
         <span class="contact-item">
           <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
@@ -562,21 +531,18 @@
         </div>
       </div>
     </div>
-    </div>
   </div>
 
-  <!-- ABOUT -->
   <div class="about-block">
     <p class="about-text">
-      SEO-специалист и контент-менеджер с <strong>9 годами опыта</strong> в интернет-маркетинге. 
-      Работал с <strong>крупными федеральными проектами</strong>, интернет-магазинами и платформами. 
-      Умею <strong>системно управлять контентом</strong> категорий: от ТЗ на тексты до аналитики поведенческих факторов. 
-      Понимаю, как пользователи находят и выбирают товары — именно поэтому я могу быть полезным в роли 
+      SEO-специалист и контент-менеджер с <strong>9 годами опыта</strong> в интернет-маркетинге.
+      Работал с <strong>крупными федеральными проектами</strong>, интернет-магазинами и платформами.
+      Умею <strong>системно управлять контентом</strong> категорий: от ТЗ на тексты до аналитики поведенческих факторов.
+      Понимаю, как пользователи находят и выбирают товары — именно поэтому я могу быть полезным в роли
       категорийного менеджера для <strong>Playerok</strong>.
     </p>
   </div>
 
-  <!-- MATCH WITH VACANCY -->
   <div class="section">
     <div class="section-header">
       <span class="section-label">Чем занимался и что умею</span>
@@ -628,7 +594,6 @@
     </div>
   </div>
 
-  <!-- SKILLS -->
   <div class="section">
     <div class="section-header">
       <span class="section-label">Навыки</span>
@@ -655,7 +620,6 @@
     </div>
   </div>
 
-  <!-- EXPERIENCE -->
   <div class="section">
     <div class="section-header">
       <span class="section-label">Опыт работы</span>
@@ -739,7 +703,6 @@
     </div>
   </div>
 
-  <!-- EDUCATION -->
   <div class="section">
     <div class="section-header">
       <span class="section-label">Образование</span>
@@ -754,7 +717,13 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
   <div class="resume-footer">
     <div class="footer-brand">Александр Ильин · Резюме 2026</div>
     <div class="footer-target">
+      Целевая вакансия: <strong>Категорийный менеджер</strong> в <span class="pk-logo">PLAYEROK</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
